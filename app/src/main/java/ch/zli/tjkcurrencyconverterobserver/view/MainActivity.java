@@ -5,6 +5,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
+import android.widget.Spinner;
 
 import com.google.android.material.tabs.TabLayout;
 
@@ -33,5 +34,7 @@ public class MainActivity extends AppCompatActivity {
         vpAdapter.addFragment(new ObserveFragment(), "Observe");
 
         viewPager.setAdapter(vpAdapter);
+
+
     }
 }
