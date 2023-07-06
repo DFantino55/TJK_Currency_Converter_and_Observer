@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ConvertedActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="333dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/valueFrom"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textAlignment="center"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:textAlignment="center"
+            android:text="are equal to" />
+
+        <TextView
+            android:id="@+id/valueTo"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:textAlignment="center"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/backToConverter"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:text="Calculate New" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

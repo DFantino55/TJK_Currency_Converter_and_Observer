@@ -58,7 +58,7 @@
         </LinearLayout>
 
         <EditText
-            android:id="@+id/editTextNumberDecimal"
+            android:id="@+id/value"
             android:layout_width="186dp"
             android:layout_height="wrap_content"
             android:ems="10"
