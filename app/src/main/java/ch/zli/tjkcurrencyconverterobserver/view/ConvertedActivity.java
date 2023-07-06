@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import ch.zli.tjkcurrencyconverterobserver.R;
+import ch.zli.tjkcurrencyconverterobserver.service.*;
 
 public class ConvertedActivity extends AppCompatActivity {
     private TextView valueFrom;
@@ -36,9 +37,14 @@ public class ConvertedActivity extends AppCompatActivity {
 
         intent = getIntent();
 
-        valueFrom.setText(intent.getStringExtra("value") + " " + intent.getStringExtra("from"));
-        valueTo.setText("y" + " " + intent.getStringExtra("to"));
+        valueFrom.setText(intent.getFloatExtra("value", 0) + " " + intent.getStringExtra("from"));
 
+        ExchangeService exchangeService = new ExchangeService();
+        float exchange = exchangeService.exchange(intent.getStringExtra("from"),
+                intent.getStringExtra("to"),
+                intent.getFloatExtra("value", 0));
+
+        valueTo.setText(exchange + intent.getStringExtra("to"));
 
     }
 }

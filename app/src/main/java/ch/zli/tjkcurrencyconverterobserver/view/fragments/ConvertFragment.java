@@ -85,7 +85,7 @@ public class ConvertFragment extends Fragment {
                 Intent intent = new Intent(view.getContext(), ConvertedActivity.class);
                 intent.putExtra("from", spinnerFromSelected);
                 intent.putExtra("to", spinnerToSelected);
-                intent.putExtra("value", value.getText().toString());
+                intent.putExtra("value", Float.valueOf(value.getText().toString()));
                 startActivity(intent);
             }
         });
