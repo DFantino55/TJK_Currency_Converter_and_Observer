@@ -41,6 +41,7 @@
             android:id="@+id/backToConverter"
             android:layout_width="match_parent"
             android:layout_height="86dp"
-            android:text="Calculate New" />
+            android:text="Calculate New"
+            android:backgroundTint="@color/blue"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

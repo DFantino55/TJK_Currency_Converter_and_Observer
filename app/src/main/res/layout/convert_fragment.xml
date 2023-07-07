@@ -71,6 +71,7 @@
             android:layout_width="186dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Calculate" />
+            android:text="Calculate"
+            android:backgroundTint="@color/blue"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
