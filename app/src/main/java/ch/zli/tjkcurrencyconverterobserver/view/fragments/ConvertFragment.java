@@ -42,7 +42,8 @@ public class ConvertFragment extends Fragment {
         spinnerFromItems.add("EUR");
         spinnerFromItems.add("USD");
         spinnerFromItems.add("Pfund");
-        ArrayAdapter<String> adapterFrom = new ArrayAdapter<String>(view.getContext(), android.R.layout.simple_spinner_item, spinnerFromItems);
+        ArrayAdapter<String> adapterFrom = new ArrayAdapter<String>
+                (view.getContext(), android.R.layout.simple_spinner_item, spinnerFromItems);
         spinnerFrom.setAdapter(adapterFrom);
         spinnerFrom.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -62,7 +63,8 @@ public class ConvertFragment extends Fragment {
         spinnerToItems.add("EUR");
         spinnerToItems.add("USD");
         spinnerToItems.add("Pfund");
-        ArrayAdapter<String> adapterTo = new ArrayAdapter<String>(view.getContext(), android.R.layout.simple_spinner_item, spinnerToItems);
+        ArrayAdapter<String> adapterTo = new ArrayAdapter<String>
+                (view.getContext(), android.R.layout.simple_spinner_item, spinnerToItems);
         spinnerTo.setAdapter(adapterTo);
         spinnerTo.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -89,9 +91,6 @@ public class ConvertFragment extends Fragment {
                 startActivity(intent);
             }
         });
-
-
-
 
         // Inflate the layout for this fragment
         return view;

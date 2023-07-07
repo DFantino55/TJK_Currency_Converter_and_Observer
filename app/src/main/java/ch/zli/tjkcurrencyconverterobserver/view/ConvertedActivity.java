@@ -37,14 +37,15 @@ public class ConvertedActivity extends AppCompatActivity {
 
         intent = getIntent();
 
-        valueFrom.setText(intent.getFloatExtra("value", 0) + " " + intent.getStringExtra("from"));
+        valueFrom.setText(intent.getFloatExtra("value", 0) + " " +
+                intent.getStringExtra("from"));
 
         ExchangeService exchangeService = new ExchangeService();
         float exchange = exchangeService.exchange(intent.getStringExtra("from"),
                 intent.getStringExtra("to"),
                 intent.getFloatExtra("value", 0));
 
-        valueTo.setText(exchange + intent.getStringExtra("to"));
+        valueTo.setText(exchange + " " + intent.getStringExtra("to"));
 
     }
 }

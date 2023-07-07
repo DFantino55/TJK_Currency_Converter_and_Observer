@@ -22,7 +22,8 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.ViewHolder> {
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.observe_fragment, parent, false);
+        View view = LayoutInflater.from(parent.getContext())
+                .inflate(R.layout.observe_fragment, parent, false);
         return new ViewHolder(view);
     }
 

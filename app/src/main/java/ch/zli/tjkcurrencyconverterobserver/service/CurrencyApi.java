@@ -22,7 +22,7 @@ public class CurrencyApi extends Service {
 
     public float getExchangerate(String from) throws IOException {
 
-        /* Doesnt Work
+        /* Not Yet Implemented
 
         String apiKey = "58a512c9dae9cc8dd8e78512";
 
@@ -34,12 +34,12 @@ public class CurrencyApi extends Service {
         HttpURLConnection request = (HttpURLConnection) url.openConnection();
         request.connect();
 
-// Convert to JSON
+        // Convert to JSON
         JsonParser jp = new JsonParser();
         JsonElement root = jp.parse(new InputStreamReader((InputStream) request.getContent()));
         JsonObject jsonobj = root.getAsJsonObject();
 
-// Accessing object
+        // Accessing object
         String req_result = jsonobj.get("result").getAsString();
     }
          */
