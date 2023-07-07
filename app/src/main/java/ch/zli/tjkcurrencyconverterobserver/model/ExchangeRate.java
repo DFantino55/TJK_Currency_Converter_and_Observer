@@ -13,6 +13,13 @@ public class ExchangeRate {
         this.to = to;
     }
 
+    public ExchangeRate(String from, String to, float min, float max) {
+        this.from = from;
+        this.to = to;
+        this.min = min;
+        this.max = max;
+    }
+
     public float getExchangeRate() {
         ExchangeService exchangeService = new ExchangeService();
         return exchangeService.exchange(from, to, 1);
