@@ -33,18 +33,31 @@ public class ObserveFragment extends Fragment {
 
         savedExchangeRates = new ArrayList<>();
         savedExchangeRatesString = new ArrayList<>();
-        ExchangeRate exchangeRate1 = new ExchangeRate("CHF", "EUR");
-        ExchangeRate exchangeRate2 = new ExchangeRate("CHF", "EUR");
-        exchangeRate1.setMin(1.10f);
-        exchangeRate1.setMax(1.20f);
+
+        // Hardcoded the Saved Exchange Rates
+        ExchangeRate exchangeRate1 = new ExchangeRate("CHF", "EUR", 1.2f, 1.4f);
+        ExchangeRate exchangeRate2 = new ExchangeRate("CHF", "USD", 1.3f, 1.5f);
+        ExchangeRate exchangeRate3 = new ExchangeRate("CHF", "Pfund", 1.1f, 1.6f);
+        ExchangeRate exchangeRate4 = new ExchangeRate("EUR", "CHF", 1.4f, 1.9f);
+        ExchangeRate exchangeRate5 = new ExchangeRate("EUR", "USD", 1.3f, 1.8f);
+        ExchangeRate exchangeRate6 = new ExchangeRate("EUR", "Pfund", 1.2f, 1.7f);
+        ExchangeRate exchangeRate7 = new ExchangeRate("USD", "CHF", 1.1f, 1.8f);
+        ExchangeRate exchangeRate8 = new ExchangeRate("USD", "EUR", 1.4f, 1.6f);
+        ExchangeRate exchangeRate9 = new ExchangeRate("USD", "Pfund", 1.2f, 1.7f);
         savedExchangeRates.add(exchangeRate1);
         savedExchangeRates.add(exchangeRate2);
-
+        savedExchangeRates.add(exchangeRate3);
+        savedExchangeRates.add(exchangeRate4);
+        savedExchangeRates.add(exchangeRate5);
+        savedExchangeRates.add(exchangeRate6);
+        savedExchangeRates.add(exchangeRate7);
+        savedExchangeRates.add(exchangeRate8);
+        savedExchangeRates.add(exchangeRate9);
 
         for (ExchangeRate item:
              savedExchangeRates) {
-            savedExchangeRatesString.add(savedExchangeRates.indexOf(item), item.getTo() +
-                    " --> " + item.getFrom() +
+            savedExchangeRatesString.add(savedExchangeRates.indexOf(item), item.getFrom() +
+                    " --> " + item.getTo() +
                     " min: " + item.getMin() +
                     " max: " + item.getMax()
             );
