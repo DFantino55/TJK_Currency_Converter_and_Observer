@@ -4,6 +4,8 @@ import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
 
+import java.io.IOException;
+
 public class ExchangeService extends Service {
     public ExchangeService() {
     }
@@ -15,7 +17,13 @@ public class ExchangeService extends Service {
     }
 
     public float exchange(String from, String to, float value) {
-        float exchangeRate = 1.2f;
+        CurrencyApi currencyApi = new CurrencyApi();
+        float exchangeRate = 1;
+        try {
+            exchangeRate = currencyApi.getExchangerate(from);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
 
         return value*exchangeRate;
     }
