@@ -1,5 +1,4 @@
 package ch.zli.tjkcurrencyconverterobserver.model;
-
 import ch.zli.tjkcurrencyconverterobserver.service.ExchangeService;
 
 public class ExchangeRate {
@@ -9,7 +8,7 @@ public class ExchangeRate {
     private float min;
     private float max;
 
-    public ExchangeRate(String from, String to) {
+    public ExchangeRate(String from, String to){
         this.from = from;
         this.to = to;
     }
