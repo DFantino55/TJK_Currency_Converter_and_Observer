@@ -34,7 +34,5 @@ public class MainActivity extends AppCompatActivity {
         vpAdapter.addFragment(new ObserveFragment(), "Observe");
 
         viewPager.setAdapter(vpAdapter);
-
-
     }
 }

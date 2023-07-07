@@ -14,7 +14,6 @@ import ch.zli.tjkcurrencyconverterobserver.service.*;
 public class ConvertedActivity extends AppCompatActivity {
     private TextView valueFrom;
     private TextView valueTo;
-
     private Button backToConverter;
     private Intent intent;
 

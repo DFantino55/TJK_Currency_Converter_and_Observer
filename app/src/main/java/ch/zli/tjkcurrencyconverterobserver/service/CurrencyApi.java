@@ -21,19 +21,14 @@ public class CurrencyApi extends Service {
     }
 
     public float getExchangerate(String from) throws IOException {
-
         /* Not Yet Implemented
-
         String apiKey = "58a512c9dae9cc8dd8e78512";
-
         // Setting URL
         String url_str = "https://v6.exchangerate-api.com/v6/"+apiKey+"/latest/"+from;
-
         // Making Request
         URL url = new URL(url_str);
         HttpURLConnection request = (HttpURLConnection) url.openConnection();
         request.connect();
-
         // Convert to JSON
         JsonParser jp = new JsonParser();
         JsonElement root = jp.parse(new InputStreamReader((InputStream) request.getContent()));
